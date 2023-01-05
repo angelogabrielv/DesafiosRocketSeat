@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    color: white;
+}
+
+.background{
+    margin-left: auto;
+    width: 50vw;
+    height: 100vh;
+}
+
+.background img{
+    object-fit: cover;
+    object-position: right;
+    width: 50vw;
+    height: 100vh;
+}
+
+.central{
+    position: absolute;
+    width: 50vw;
+    min-width: 580px;
+    height: 100vh;
+    padding:50px 0 0 30px;
+    background-color: #121214;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+main > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: #04D361;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-weight:300 ;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+
+fieldset {
+    border: none;
+    display: flex;
+}
+
+legend {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 17px;
+}
+
+form input {
+    outline: none;
+    border-left: 5px #04D361 solid;
+    font-family: 'League Spartan', sans-serif;
+    min-width: 105%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 1rem;
+    border: none;
+}
+
+form button {
+    min-width: 48px;
+    min-height: 48px;
+    border: none;
+    color: #E1E1E6;
+    background: #8257e5;
+}
+
+.deixe-meLerPrimeiro{
+    display: flex;
+    text-decoration: none;
+    color: #8257e5;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.4rem;
+    align-items: center;
+    font-weight: 500;
+}
+
+button span{
+    font-size: 0;
+    position: absolute;
+}
+
+.button {
+    color: #E1E1E6;
+    background: #8257e5;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover{
+    background-color: #121214;
+    height: 48px;
+    transition-duration: 0.5s;
+    border-radius: 5px 10px 10px 5px;
+    transform: scale(1.1);
+}

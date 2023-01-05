@@ -1,0 +1,133 @@
+@media(max-width: 1100px) {
+
+    #bottom{
+        order: 1;
+        display: flex;
+        width: 95vw;
+        flex-direction: row-reverse;
+        gap: 2rem;
+    }
+
+    .info-box{
+        flex-grow: 3;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .techs{
+        padding: 2vh 0;
+    }
+
+    .techs h2{
+        padding-left: 2rem;
+    }
+
+    .techs-input{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+        width: 24.2vw;
+    }
+}
+
+@media(max-width: 860px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media(max-width: 768px){
+    .my-content{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .content-left, .content-right{
+        width: 100%;
+    }
+}
+
+@media(max-width: 620px){
+
+    #bottom{
+        flex-direction: column-reverse;
+    }
+
+    .info-box{
+        width: 100%;
+        
+    }
+
+    .techs{
+        width: 100%;
+    }
+
+    .techs-input{
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width: 500px){
+
+    aside{
+        display: block;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .presentation-box-column header{
+        display: flex;
+        gap: 5rem;
+        width: 95vw;
+    }
+
+    .presentation-box{
+        display: none;
+    }
+
+    #bottom{
+        order: 0;
+        margin: 0;
+    }
+
+    .info-box{
+        margin-bottom: 0;
+    }
+
+    .container-right{
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+
+    .presentation-box, .experience, .education, .my-project, .my-content, .recent-post, .resume{
+        width: 95vw;
+        height: auto;
+    }
+
+    .experience ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+   
+    .education ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+}
