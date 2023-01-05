@@ -1,0 +1,40 @@
+@media(max-width: 1100px){
+    
+    .container {
+        height: auto;
+    }
+    
+    main{
+        flex-direction: column;
+        padding: 120px 0 190px 0;
+        gap: 50px;
+    }
+
+    .modal{
+        margin: 20% 0 0 3%;
+    }
+}
+
+@media(max-width: 580px){
+
+    html{
+        font-size: 50%;
+    }
+
+    img{
+        order: -1;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .mensage{
+        margin: 0;
+    }  
+
+    .modal{
+        margin: 0;
+        width: 95vw;
+        margin-left: 2.5vw;
+        margin-top: 300px;
+    }
+}

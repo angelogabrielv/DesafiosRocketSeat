@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+}
+
+header{ 
+    width: 100vw;
+    height: 108px;
+    background-color: #290742;
+    display: flex; 
+}
+
+.headerBox{
+    padding: 64px 135px 0 135px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.none{
+    display: none;
+}
+
+.headerBox nav{
+    border-left: 2px solid #4FFF4B;
+    padding-left: 3px;
+    display: flex;
+    
+    height: 20.8px;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 348px;
+}
+
+.headerBox nav ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerBox nav a:hover{
+    padding: 4.8px;
+    color: #9E6DC2;
+    transition-duration: 600ms;
+    animation-delay: 200ms;
+    border-radius: 10px;
+}
+
+.searchBox{
+    width: 300px;
+    height: 44px;
+    display: flex;
+}
+
+.searchBox input{
+    width: 230px;
+    height: 44px;
+    border-radius: 4px 0 0 4px;
+    padding: 14px 25px;
+    font-size: 1.4rem;
+    color: #FBF6FF;
+    outline: none;
+    border: none;
+    background-color: #170027;
+}
+
+.searchBox input::placeholder{
+    color: #FBF6FF;
+}
+
+.searchBox button{
+    width: 70px;
+    height: 44px;
+    background-color: #9E6DC2;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+
+.searchBox button span{
+    opacity: 0;
+}
+
+.headline{
+    height: 474px;
+    border-bottom: 5px solid #4FFF4B;
+    background-color: #290742;
+    padding: 64px 135px;
+
+    justify-content: space-between;
+    display: flex;
+}
+
+.headline .contentBoxHeadline{
+    width: 39.5vw;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.contentBoxHeadline h1{
+    color: #9E6DC2;
+    font-weight: 700;
+    font-size: 3.6rem;
+    margin-bottom: 16px;
+}
+
+.contentBoxHeadline > span{
+    color: #FBF6FF;
+    font-size: 28.8px;
+    margin-bottom: 24px;
+}
+
+.contentBoxHeadline > a{
+    width: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.contentBoxHeadline a span{
+    color: #FBF6FF;
+}
+
+.headline img{
+    width: 39.5vw;
+    object-fit: cover;
+    margin-left: auto;
+}
+
+.news {  
+    padding: 54px 133px 67.5px 136px;
+}
+
+.firstNews{
+    display: flex;
+    justify-content: space-between;
+    height: 546px;
+    padding: auto 135px;
+    gap: 130px;
+}
+
+.firstNews img{
+    width: 39.5vw;
+}
+
+.firstNews div{
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.firstNews > div:first-child{
+    width: 39.5vw;
+}
+
+.firstNews > div:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 48px;
+}
+
+.firstNews div:last-child div{
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.newsBottom{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 64px;
+}
+
+.newsBottom div{
+    display: flex;
+    flex-direction: column;
+    width: 24.7vw;
+}
+
+.newsBottom div figure img{
+    width: 24.7vw;
+}
+
+span{
+    color: #000;
+    font-size: 1.6rem;
+}
+
+h2{
+    color: #290742;
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+.headerBox nav a:first-child{
+    font-weight: 700;
+}
+
+.contentBoxHeadline span{
+    font-size: 1.8rem;
+    color: #FBF6FF;
+}
+
+.contentBoxHeadline a span{
+    font-size: 1.8rem;
+    color: #9E6DC2;
+    font-weight: 700;
+    line-height: 0;
+}
+
+figcaption{
+    font-size: 1.6rem;
+    margin: 16px 0 6px 0;
+}

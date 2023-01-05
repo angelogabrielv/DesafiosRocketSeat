@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.container {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  color: #828799;
+  background: linear-gradient(
+    to bottom,
+    #1D539E 0%, #1D539E 50%,
+    #FFF 50%, #FFF 100%
+  );
+}
+
+.content-box {
+  margin: 0 auto;
+  width: auto;
+}
+
+.intro {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+
+.boxTables {
+  display: flex;
+  gap: 20px;
+  padding: 0 8px;
+}
+
+.boxTables > div {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.boxTables div section > p:first-child{
+    margin-top: 30px;
+    color: #1e2338;
+    font-size: 1.8rem;
+}
+
+hr{
+    margin: auto;
+    width: 80%;
+    border-color: #EEEEEE;
+}
+
+.boxTables .firstTable, .boxTables .thirdTable{
+  padding: 0 30px;
+  height: 470px;
+  margin-top: 45px;
+  max-width: 295px;
+}
+
+.boxTables div section p .upperCase {
+  color: #1e2338;
+  font-weight: 700;
+  font-size: 3.8rem;
+}
+
+.boxTables div section p .upperCase::after{
+    content: ',00';
+    font-size: 1.8rem;
+}
+
+.boxTables div section p span:nth-child(2){
+    color: #1e2338;
+    font-weight: 700;
+}
+
+.boxTables div section > p:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.boxTables div section > p:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+.boxTables > div > section > div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 242px;  
+}
+
+.boxTables div section div p::before{
+    content: '✔ ';
+}
+
+.boxTables .buyBox {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border: 1px solid #1d539e;
+  border-radius: 10px;
+  height: 51px;
+  max-width: 296px;
+  min-width: 160px;
+
+  margin-top: auto;
+
+  font-weight: 500;
+  font-size: 2rem;
+  color: #1d539e;
+}
+
+.boxTables .buyBox:hover
+{
+    transition-duration: 600ms;
+    cursor: pointer;
+    background: #1d539e;
+    color: #f9fbfc;
+}
+
+
+
+/* Tabela do meio */
+.boxTables .secondTable {
+  margin-top: 25px;
+  height: 465px;
+  max-width: 295px;
+  padding: 25px 30px 30px 25px;
+  padding-top: 0;
+  background: linear-gradient(
+    #ffcc29 0%, #ffcc29 15.5%,
+    #FFF 15.5%, #FFF 100%
+  );
+}
+
+.boxTables .secondTable .secondTableLegend {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.boxTables .secondTable .secondTableLegend span {
+  font-size: 2rem;
+  color: #1d539e;
+  font-weight: 500;
+}
+
+.boxTables .secondTable .secondTableLegend > div {
+  background-color: #1d539e;
+  width: 94px;
+  height: 32px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.boxTables .secondTable .buyBox {
+  background-color: #1d539e;
+  color: #fff;
+  margin-top: auto;
+  margin-bottom: 25px;
+}
+
+.boxTables .secondTable .buyBox:hover{
+    background-color: #f9fbfc;
+    color: #1d539e;
+    transition-duration: 600ms;
+    cursor: pointer;
+}

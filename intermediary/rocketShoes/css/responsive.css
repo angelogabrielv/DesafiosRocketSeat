@@ -1,0 +1,327 @@
+@media(max-width: 1320px){
+
+    .tenisRow{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        width: 100%;
+    }
+
+    .tenisRow div img, .tenisRow > div:nth-child(2) img{
+        width: 200px;
+    }
+
+}
+
+@media(max-width: 1010px){
+
+    html{
+        font-size: 50%;
+    }
+
+    nav ul{
+        min-width: 400px;
+    }
+
+    .tenisRow{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        width: 100%;
+    }
+
+    .tenisRow div img, .tenisRow > div:nth-child(2) img{
+        width: 160px;
+    }
+
+}
+
+@media(max-width: 965px){
+
+    .imageBox > div > img{
+        width: 480px;
+    }
+
+    main{
+        height: 1020px;
+    }
+
+}
+
+@media(max-width: 940px){
+
+    main{
+        flex-direction: column;
+        background: linear-gradient(
+            to bottom,
+            #E5E5E5 0%, #E5E5E5 100%
+        );
+
+        justify-content: space-between;
+    }
+
+/* Info box */
+
+.infoBox{
+    width: 100vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.infoBox > div{
+    width: 80%;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.infoBox > div > div:first-child{
+    width: 90%;
+    text-align: start;
+}
+
+.infoBox > div > div:first-child > span{
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #9C9696;
+}
+
+.infoBox > div > div:first-child > h1{
+    font-size: 6rem;
+}
+
+.infoBox > div > div:last-child h2{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.infoBox > div > div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 10px;
+
+    height: auto;
+}
+
+.infoBox > div > div:last-child div{
+    width: 120px;
+    height: 50px;
+}
+
+/* Product Box */
+
+.productBox{
+    width: 100vw;
+    padding-bottom: 40px;
+    padding-top: 20px;
+
+}
+
+.imageBox{
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.tenisRow{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tenisRow div img, .tenisRow > div:nth-child(2) img{
+    width: 200px;
+}
+
+footer{
+    background-color: #C4C4C4;
+}
+
+@media(max-width: 750px){
+
+nav{
+    display: none;
+}
+
+.menuSection{
+    order: -1;
+}
+
+.menuToggle{
+    height: 22px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.one, .two, .three{
+    width: 25px;
+    height: 4px;
+    background-color: red;
+    transition-duration: 0.3s;
+}
+
+/* Fullscress */
+
+.menuSection.on{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #C4C4C4;
+}
+
+.menuSection.on .menuToggle{
+    margin: 39px 0 0 60px;
+}
+
+.menuSection.on .two{
+    opacity: 0;
+}
+
+.menuSection.on .one{
+    transform: rotate(45deg) translate(16px, 20px);
+    transition-duration: 0.2s;
+}
+.menuSection.on .three{
+    transform: rotate(-45deg) translate(-8px, 3px);
+    transition-duration: 0.2s;
+}
+
+.menuSection.on nav{
+    display: flex;
+}
+
+.menuSection.on nav ul{
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    height: 80vh;
+}
+
+.menuSection.on     nav ul li a{
+    font-size: 4rem;
+}
+
+.imageBox > div > img{
+    width: 50vw;
+}
+
+.tenisRow div img, .tenisRow div:nth-child(2) img{
+    width: 22vw;
+    min-width: 80px;
+}
+}
+
+@media(max-width: 605px){
+
+    main{
+        height: 900px;
+    }
+
+    footer{
+        height: 100px;
+    }
+
+    footer > div span{
+        font-size: 1.8rem;
+    }
+
+    footer ul li:nth-child(1){
+        display: none;
+        width: 20px;
+    }
+
+    footer ul li:nth-child(3){
+        display: none;
+        width: 20px;
+    }
+
+    footer ul li:nth-child(5){
+        display: none;
+        width: 20px;
+    }
+    
+    footer ul li:nth-child(7){
+        display: none;
+        width: 20px;
+    }
+
+    footer ul li:nth-child(2){
+        display: block;
+        width: 20px;
+    }
+
+    footer ul li:nth-child(4){
+        display: block;
+        width: 20px;
+    }
+
+    footer ul li:nth-child(6){
+        display: block;
+        width: 20px;
+    }
+    
+    footer ul li:nth-child(8){
+        display: block;
+        width: 20px;
+    }
+}
+
+@media(max-width: 490px){
+
+    .searchBar{
+        min-width: 100px;
+    }
+
+    .logoShoes{
+        display: none;
+    }
+
+    .infoBox div{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .infoBox div div:first-child{
+        width: 80%;
+    }
+
+    .infoBox div div:last-child{
+        align-items: flex-end;
+        width: 80%;
+    }
+
+    footer{
+        height: 70px;
+    }
+
+    footer > div{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer > div span{
+        font-size: 1.2rem;
+    }
+
+    footer > div span:last-child svg{
+        width: 16px;
+    }
+}
+
+}

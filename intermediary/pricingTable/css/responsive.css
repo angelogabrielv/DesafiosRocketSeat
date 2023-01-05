@@ -1,0 +1,46 @@
+@media(max-width: 800px){
+    html{
+        font-size: 50%;
+    }
+
+
+}
+@media(max-width: 720px){
+
+    .content-box{
+        margin-top: 800px;
+    }
+
+    .boxTables{
+        flex-direction: column;
+        margin-top: auto;
+        align-items: center;
+        gap: 1px;
+    }
+
+    .boxTables .firstTable, .boxTables .thirdTable{
+        height: 340px;
+        max-width: 295px;
+        border: #1D539E 1px solid;
+      }
+    
+    .boxTables > div > section > div{
+        height: 150px;
+      }
+
+    .firstTable{
+        order: 1;
+        margin-bottom: 40px;
+    }
+
+    .boxTables .secondTable{
+        height: 350px;
+        max-width: 296px;
+        min-width: 160px;
+        border: 1px solid #1D539E;
+        background: linear-gradient(
+        #ffcc29 0%, #ffcc29 20%,
+        #FFF 20%, #FFF 100%
+  );
+    }
+}

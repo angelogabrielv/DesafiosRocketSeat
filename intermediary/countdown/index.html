@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/countdown.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="centralBox">
+          <div>
+            <h1>READY TO LAUNCH IN ...</h1>
+            <div class="watch">
+              <div>
+                <p>Dias</p>
+                <p class="days"></p>
+              </div>
+              <div class="separator">:</div>
+              <div>
+                <p>Horas</p>
+                <p class="hours"></p>
+              </div>
+              <div class="separator">:</div>
+              <div>
+                <p>Minutos</p>
+                <p class="min"></p>
+              </div>
+              <div class="separator">:</div>
+              <div>
+                <p>Segundos</p>
+                <p class="sec"></p>
+              </div>
+            </div>
+
+          </div>
+          <div class="mensage"
+            >Increva-se para saber mais sobre o lançamento</div
+          >
+          <div>
+            <button onclick="openModal()">Increva-se</button>
+          </div>
+        </div>
+
+        <div class="modal">
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Inscreva-se</legend>
+              <label for="#"
+                >Nome
+                <br />
+                <input type="text" placeholder="Insira seu nome" />
+              </label>
+              <label for="#"
+                >Email
+                <br />
+                <input type="email" placeholder="email@example.com" />
+              </label>
+            </fieldset>
+          </form>
+          <div class="buttons">
+            <button type="submit">Enviar</button>
+            <button onclick="closeModal()">Fechar</button>
+          </div>
+        </div>
+
+        <img src="assets/images/rocket.svg" alt="rocket-image" />
+      </main>
+    </div>
+  </body>
+  <!-- 
+  <script src="intermediary/javascript/bugs.js"></script> -->
+  <script src="js/countdown.js"></script>
+  <script src="js/manager.js"></script>
+</html>

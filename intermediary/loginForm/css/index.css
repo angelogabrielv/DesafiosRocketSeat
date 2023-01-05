@@ -1,0 +1,185 @@
+/* fonts{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+} */
+
+/* Organizado em:
+
+Geral
+
+box
+
+formulário
+
+fontes */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    background-color: #191816;
+}
+
+.background{
+    margin-left: auto;
+    width: 50vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../assets/images/side-image-2x.jpg);   
+}
+
+.container {
+    background-color: #191816;
+    width: 50vw;
+    min-width: 635px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header > img{
+    margin: 40px;
+    margin-bottom: 0;
+}
+
+.centralBox{
+    width: 408px;
+    padding-bottom: 40px;
+    background-color: #24221F;
+    margin: 0 auto;
+    margin-top: 4vh;
+    border-radius: 4px;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.form legend{
+    padding: 55px 0 27px 0;
+}
+
+.form legend div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input{
+    width: 335px;
+    height: 44px;
+    background-color: #24221F;
+    display: flex;
+    align-items: center;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    padding: 14px 0 14px 44px;
+    margin-bottom: 20px;
+    outline-color: #FFC632
+}
+
+.inputContainer div {
+    position: absolute;
+    padding: 12px;
+}
+
+.centralBox div:nth-child(4) label{
+    display: flex;
+    color: #A9AFB9;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.centralBox div:nth-child(4) label a{
+    margin-left: auto;
+    text-decoration: none;
+    color: #FFC632;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.centralBox div:nth-child(4) input{
+    display: none;
+}
+
+.check{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+}
+
+.checkBox:checked + .check{
+    background-image: url("data:image/svg+xml,%3Csvg width='18px' height='18px' viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.47 11.35l7.94-8.382c.57-.6 1.52-.627 2.122-.057.6.57.627 1.52.057 2.123l-9 9.5-.016.014-.014.015c-.58.582-1.52.586-2.106.015l-.02-.02-3.995-3.994c-.587-.585-.587-1.535 0-2.12.584-.586 1.534-.586 2.12 0l2.91 2.91z' fill='%23494c4e' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
+    background-color: #FFC632;
+}
+
+input::placeholder{
+    color: #A9AFB9;
+}
+
+button{
+    padding: 16.5px 130px;
+    border-radius: 4px;
+    background-color: #FFC632;
+    border: none;
+
+    cursor: pointer;
+
+    color: #473404;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    margin-bottom: 14px;
+}
+
+.centralBox a{
+    color: #FFC632;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.centralBox a span:last-child{
+    font-weight: 600;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+    color: #D4CCB6;
+    font-size: 2.4rem;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; 
+    color: #AFB6C2;
+    font-size: 1.6rem;
+}
+
+label  span:nth-child(1){
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; 
+    color: #AFB6C2;
+    font-size: 1.6rem;
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; 
+    color: #A9AFB9;
+    font-size: 1.4rem;
+}

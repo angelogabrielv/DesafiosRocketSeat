@@ -1,0 +1,25 @@
+@media(max-width:635px){
+    .container{
+        width: auto;
+    }
+    .centralBox{
+        background-color: #191816;
+    }
+}
+
+@media(max-width:390px){
+    header > img{
+        margin: 40px 0 30px 20px;
+    }
+
+    .container{
+        min-width: auto;
+    }
+
+    .centralBox{
+        height: auto;
+        min-width: 375px;
+        background-color: #191816;
+        align-items: top;
+    }
+}

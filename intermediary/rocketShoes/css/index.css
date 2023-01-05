@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #E5E5E5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+
+    padding: 39px 60px 0 60px;
+    width: 100vw;
+
+    z-index: 10;
+}
+
+.bag:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 51.25vw;
+    min-width: 560px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+nav ul li a:hover{
+    padding: 10px;
+    transition-duration: 0.3s;
+}
+
+main{
+    height: 100vh;
+    min-height: 920px;
+
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 100px;
+    
+    background: linear-gradient(
+        to right,
+        #E5E5E5 0%, #E5E5E5 37.5%,
+        #C4C4C4 37.5%, #C4C4C4 100%
+    );
+}
+
+/* Search Bar */
+
+.searchBar{
+    min-width: 120px;
+    width: 15.2vw;
+    height: 45px;
+    background-color: #FFF;
+
+    display: flex;
+}
+
+.searchBar button{
+    background-color: #FFF;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchBar button span{
+    display: none;
+}
+
+.searchBar button svg{
+    margin: 0 5px 0 13px;
+}
+
+.searchBar input{
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+/* Info box */
+
+.infoBox{
+    width: 37.5vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoBox > div{
+    width: 66%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.infoBox > div > div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infoBox > div > div:last-child{
+    height: 162px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.infoBox > div > div:first-child > span{
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #9C9696;
+}
+
+.infoBox > div > div:first-child > h1{
+    font-size: 6rem;
+    margin-bottom: 21px;
+}
+
+.infoBox > div > div:last-child h2{
+    font-weight: 700;
+    font-size: 4rem;
+    width: 185px;
+}
+
+.infoBox > div > div:last-child div{
+    width: 274px;
+    height: 90px;
+    background-color: #FF0000;
+    
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #FFF;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoBox > div > div:last-child:hover{
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+}
+
+/* Product Box */
+
+.productBox{
+    background-color: #C4C4C4;
+  
+    width: 62.5vw;
+    
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 60vw;
+}
+
+.tenisRow{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    width: 100%;
+}
+
+.tenisRow div img{
+    width: 270px;
+}
+
+.tenisRow > div:nth-child(2) img{
+    width: 250px;
+}
+
+.tenisRow div img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    cursor: zoom-in;
+}
+
+/* footer */
+
+footer{
+    width: 100vw;
+    height: 166px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div:first-child{
+    background-color: red;
+    height: 100%;
+    width: 17.5%;
+}
+
+footer div:last-child{
+    background-color: #000;
+    width: 30%;
+    height: 100%;
+    
+    color: #FFF;
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    cursor: pointer;
+}
+
+footer div:last-child:hover{
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+
+footer ul li a:hover{
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+
+footer div:last-child span{
+    line-height: 0;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-around;
+
+    width: 52.5%;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li *{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+
+footer ul li:nth-child(2){
+    display: none;
+    width: 20px;
+}
+footer ul li:nth-child(4){
+    display: none;
+    width: 20px;
+}
+footer ul li:nth-child(6){
+    display: none;
+    width: 20px;
+}
+
+footer ul li:nth-child(8){
+    display: none;
+    width: 20px;
+}
